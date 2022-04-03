@@ -1,0 +1,1538 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+:root{
+  --color-green: #83b83c;
+  --color-blue: #3ca2e6;
+  --color-bg: #e8f1ff;
+  --color-font: #1b3766;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62,5%;
+}
+body{
+  background-color: var(--color-bg);
+}
+
+/* PRIMEIRA SESSÃO */
+
+footer,
+header,
+.screen,
+.equip,
+.choose,
+.support,
+.services,
+.perfis,
+/* .slides-perfil, */
+.message,
+.client,
+.subscribe{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.equip,
+.support,
+.services,
+.perfis,
+.message,
+.client,
+.subscribe{
+  background-color: #fff;
+}
+.container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top{
+  height: 100px;
+}
+.logo{
+  width: 45px;
+}
+.logo img{
+  width: 100%;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav,
+.menu ul{
+  display: flex;
+  align-items: center;
+}
+.menu li{
+  color:var(--color-font);
+  font-size: .9rem;
+  font-weight: 600;
+  margin-right: 27px;
+}
+a{
+  text-decoration: none;
+  color: var(--color-font);
+}
+.menu a:hover{
+  color: #83b83c;
+  transition: all 0.3s linear;
+}
+:is(ul, li) {
+  list-style: none;
+}
+.get-play{
+  display: flex;
+  align-items: center;
+}
+button{
+  height: 50px;
+  width: 150px;
+  border-radius:  0px 20px 20px 20px;
+  border-style: none;
+  background-image: linear-gradient(to bottom,var(--color-green), var(--color-blue));
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+:is(.get-play button, .get-play .play, .left button, .book button):hover{
+  background-image: linear-gradient(to bottom,var(--color-blue), var(--color-green));
+  transition: all 0.3s linear;
+}
+
+/* PRIMEIRA SESSÃO */
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+.scren-main{
+  height: calc(100vh - 100px);
+  display: flex;
+}
+.right img{
+  width: 80%;
+}
+.right{
+  flex: 1;
+  display: flex;
+  justify-content: right;
+}
+.left{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.title-one{
+  font-size: 3rem;
+  color: var(--color-font);
+  height: 70px;
+  font-weight: 200;  
+}
+.title-two{
+  font-size: 3rem;
+  color: var(--color-font);
+  font-weight:500;
+}
+.description{
+  color:  #777;
+  padding-top: 15px;
+  line-height: 1.5rem;
+  margin-bottom: 15px;
+}
+.play{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: 40px;
+  position: relative;
+  background-image: linear-gradient(to bottom,var(--color-green), var(--color-blue));
+  cursor: pointer;
+}
+.play::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  border: 12px solid;
+  border-color: transparent transparent transparent var(--color-bg);
+}
+
+/* SEGUNDA SESSÃO */
+
+
+.clinic-equip{
+  height: 700px;
+  position: relative;
+}
+.clinic-equip .left > div{
+  width: 80%;
+}
+.clinic-equip img{
+  width: 60%;
+}
+.title-clinic{
+  font-size: 2.5rem;
+  font-weight: 600;
+  /* line-height: 1.5rem; */
+  color: var(--color-font);
+}
+.skill-clinic{
+  margin-top: 10px;
+}
+.skill-clinic span{
+  color: #c9c9c9;
+}
+.skill-clinic ul{
+  display: flex;
+  flex-direction: column;
+}
+.skill-clinic ul li{
+  color:var(--color-font);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.clinic-equip .doctors{
+  background-color: #fff;
+  height: 350px;
+  width: 240px;
+  border-radius: 0px 30px 30px 30px;
+  position: absolute;
+  right: 28%;
+  bottom: 180px;
+  box-shadow: 0 0 10px rgb(119, 119, 119,0.2);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.doctor{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 30px;
+}
+.doctor img{
+  width: 60px;
+}
+.perfil{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 14px;
+}
+.doctor-name{
+  color: var(--color-font);
+  font-weight: bold;
+}
+.doctor-function{
+  color: #777;
+  font-size: 0.8rem;
+}
+.clinic-equip button{
+  margin-top: 10px;
+}
+
+/* TERCEIRA SESSÃO */
+
+.your-choose,
+.services-type,
+.perfis,
+.client-depor{
+  height: 465px;
+}
+.doctor-img{
+  width: 53.5%; /*75%*/
+}
+.base-img{
+  display: none;
+}
+.your-choose img{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /* margin-bottom: 12%; */
+    width: 100%;
+}
+.list{
+  display: flex;
+}
+.list-choose{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.number-why{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  font-size: 5rem;
+  margin-right: 40px;
+  font-weight: 600;
+  color: #d4dff1;
+}
+.choose-why,
+.container-test{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-why{
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.description-why{
+  margin-top: 10px;
+}
+
+
+/* QUARTA SESSÃO */
+
+.lab-support .left > div{
+  width: 80%;
+}
+.support button{
+  margin-top: 10px;
+}
+.lab-support{
+  height: 600px;
+}
+.icon-service img,
+.test-img img{
+  width: 100%;
+}
+.test-img{
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+.test{
+  display: flex;
+  height: 135px;
+  width: 440px;
+  border: 1px rgba(201, 201, 201,0.3) solid;
+  border-radius: 0 30px 30px 30px;
+  margin-top: 25px;
+  padding: 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.test:hover{
+  box-shadow: 0 0 10px rgba(201, 201, 201,0.3);
+  transform: scale(1.03);
+}
+.title-test{
+  color: var(--color-font);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.description-test{
+  margin-top: 10px;
+}
+
+
+/* QUINTA SESSÃO */
+
+
+.container-services{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.services-type{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.services-type .title-clinic,
+.services-type .description-test{
+  text-align: center;
+}
+.icon-service{
+  width: 50px;
+  transition: all 0.1s linear;
+}
+.icon-service:hover{
+  transform: scale(1.2);
+}
+.title-service{
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.service{
+  height: 124px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(201, 201, 201,0.3);
+  cursor: pointer;
+}
+.service:nth-child(2n+1) {
+  background-color: #a0d46f;
+  transition: all 0.2s linear;
+}
+.service:nth-child(2n+1):hover{
+  background-color: var(--color-green);
+}
+.service:nth-child(2n+2) {
+  background-color: #5fa9dd;
+  transition: all 0.2s linear;
+}
+.service:nth-child(2n+2):hover {
+  background-color: var(--color-font);
+}
+.service:first-child{
+  border-radius: 20px 0 0 20px;
+}
+.service:last-child{
+  border-radius: 0 20px 20px 0;
+}
+
+
+/* SEXTA SESSÃO */
+
+
+/* SLIDES - INICIO */
+
+
+
+/* SLIDES - FIM */
+
+.clinic-perfis .right{
+  justify-content: center;
+}
+.perfil-image{
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(201, 201, 201,0.3); 
+}
+.perfil-image img{
+  width: 100%;
+}
+.perfil-doctor{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.skills-one,
+.skills-two{
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  border-radius: 30px;
+  color: var(--color-font);
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(201, 201, 201,0.3);
+}
+.skills-two{
+  background-color: #e6ffcf;
+  font-size: 0.7rem;
+  bottom: 0;
+  right: 60px;
+}
+.skills-one{
+  background-color: #def1ff;
+  top: 0;
+  left: 60px;
+}
+.skills-one img,
+.skills-two img{
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* SÉTIMA SESSÃO */
+
+
+.message-text{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  position: relative;
+}
+.message-text img{
+  width: 100%;
+}
+.equipe-medic{
+  width: 60%;
+}
+.main-text{
+  height: 150px;
+  width: 740px;
+  background-color: #fff;
+  border-radius: 0 30px 30px 30px;
+  position: absolute;
+  top: 300px;
+  color: var(--color-font);
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2.5rem;
+  box-shadow: 0 0 10px rgba(201, 201, 201,0.5);
+  padding: 20px;
+}
+
+
+/* OITAVA SESSÃO */
+
+
+.aspas img{
+  width: 100%;
+}
+.aspas,
+.aspas-coment{
+  width: 21%; /*120px*/
+  position: relative;
+  top: -230px;
+  left: -50px;
+  z-index: 1;
+}
+.client-depor .title-clinic{
+  position: relative;
+  z-index: 2;
+}
+.client-depor button{
+  margin-top: -120px;
+}
+.client-depor .right{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* .client-depor .left > div{
+  width: 80%;
+} */
+
+.box-client{
+  display: flex;
+  padding: 20px;
+  height: 250px;
+  width: 500px;
+  box-shadow: 0 0 10px rgba(201, 201, 201,0.5);
+}
+.client-pict img{
+  width: 100%;
+}
+.client-pict{
+  width: 285px;
+  padding: 10px;
+  margin-right: 20px;
+  clip-path: circle(40px at 53px 52px);
+}
+.client-name{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-font);
+  margin-bottom: 5px;
+}
+.client-function{
+  font-size: 0.8rem;
+}
+.coment-client{
+  color: #777;
+  line-height: 1.5rem;
+  margin-top: 20px;
+}
+.box-text-client{
+  display: flex;
+  padding: 33px 0;
+  flex-direction: column;
+}
+.slide-pointers{
+  display: flex;
+  margin-top: 30px;
+}
+.slide-point{
+  width: 10px;
+  height: 10px;
+  background-color: rgba(201, 201, 201,0.5);
+  border-radius: 50%;
+}
+.slide-point:nth-child(2){
+  margin: 0 10px;
+  background-image: linear-gradient(to bottom,var(--color-green), var(--color-blue))
+}
+
+
+/* NOVA SESSÃO */
+
+
+.subscribe{
+  height: 300px;
+}
+.subs-now{
+  height: 200px;
+  background-color: var(--color-bg);
+  border-radius: 30px;
+}
+.subs-now .left,
+.subs-now .right{
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+.tile-subs{
+  width: 65%;
+  text-align: center;
+  color: var(--color-font);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.email-subs form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email-subs input{
+  height: 55px;
+  width: 320px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(201, 201, 201,0.3);
+  border-radius: 0 20px 20px 20px;
+  outline: none;
+  padding: 0 20px;
+}
+input::placeholder{
+  text-align: center;
+}
+
+/* ÚLTIMA SESSÃO */
+
+
+footer{
+  background-image: url(../image/doctor_group.png);
+  background-size: cover;
+  color: #fff;
+  height: 310px;
+}
+footer .container{
+  flex-direction: column;
+}
+footer a{
+  color: #fff;
+}
+.info-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-footer{
+  display: flex;
+}
+.menu-footer > div{
+  padding: 0 30px 0 0;
+}
+.menu-footer .description{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.about-footer{
+  flex: 4;
+}
+.links,
+.faq,
+.contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.info-footer{
+  font-size: 0.7rem;
+}
+.about-footer .logo{
+  margin-bottom: 30px;
+}
+.social-network{
+  margin-top: 30px;
+}
+.social-network img{
+  height: 15px;
+  margin-right: 15px;
+}
+.link-all{
+  margin-top: 60px;
+}
+.link-all > div{
+  display: flex;
+}
+.link-all .icon{
+  width: 15px;
+  margin-right: 15px;
+}
+.link-all a{
+  display: flex;
+  margin-bottom: 10px;
+}
+.email,
+.tel,
+.local{
+margin-bottom: 10px;
+}
+.credits-footer{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  line-height: 5rem;
+  border-top: 1px solid #fff;
+}
+.up{
+  width:0;
+  height:0;
+  border-radius: 7px;
+  border: 20px solid;
+  border-color: transparent transparent var(--color-green) transparent;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0 20px 25px 0;
+  animation: is-bouncing 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) alternate infinite;
+  cursor: pointer;
+  display: none;
+}
+@keyframes is-bouncing {
+  to {
+      transform: translateY(-10px);
+  }
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/* MONITORES 1024px*/
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 1024px) {
+  .your-choose .doctor-img{
+    width: 50%;
+  }
+  .clinic-equip .doctors{
+    height: 35%;
+    width: 24%;
+    bottom: 32%;
+  }
+  .doctor{
+    margin-bottom: 10px;
+  }
+  .doctor-name{
+    font-size: 0.75rem;
+  }
+  .doctor-function{
+    font-size: 0.7rem;
+  }
+  .doctor img{
+    width: 28%;
+  }
+  .view-all{
+    margin-top: 10px;
+    font-size: .9rem;
+  }
+
+
+  .your-choose .doctor-img {
+    width: 72%;
+  }
+  .title-clinic{
+    font-size: 2.3rem;
+  }
+  .list{
+    margin-top: 10px;
+  }
+  .title-why{
+    font-size: 1.2rem;
+  }
+
+
+  .service{
+    width: 115px;
+    height: 105px;
+  }
+  .icon-service{
+    width: 45px;
+  }
+  .title-service{
+    font-size: 0.8rem;
+  }
+
+
+  .description{
+    width: 90%;
+  }
+  .skills-one,
+  .skills-two{
+    width: 33%;
+    height: 34%;
+  }
+  .skills-one img,
+  .skills-two img{
+    width: 25%;
+  }
+  .skills-one{
+    top: 0;
+    left: 0;
+  }
+  .skills-two{
+    right: -5%;
+  }
+
+
+  .message-text{
+    margin-top: 30px;
+  }
+
+
+  .client-depor{
+    height: 350px;
+  }
+  .aspas{
+    top: -214px;
+    left: -38px;
+  }
+  .client-depor button{
+    margin-top: -84px;
+  }
+  .box-client{
+    width: 90%;
+    height: 50%;
+  }
+  .box-text-client{
+    padding: 0;
+  }
+  .client-pict {
+    width: 288px;
+    padding: 4px;
+    margin-right: 7px;
+    clip-path: circle(32px at 45px 43px);
+  }
+  .coment-client{
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+
+
+  .menu-footer > div {
+    margin-top: 20px;
+    padding: 0 20px 0 0;
+  }
+  .credits-footer{
+    line-height: 3.5rem;
+  }
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+/* TABLETS 768px*/
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+  button{
+    height: 40px;
+    width: 125px;
+    font-size: 0.7rem;
+    border-radius: 0px 13px 13px 13px;
+  }
+  .menu li{
+    font-size: 0.7rem;
+    margin-right: 17px;
+  }
+  .title-one,
+  .title-two{
+    height: auto;
+    font-size: 2.5rem;
+  }
+  .description{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .play{
+    height: 38px;
+    width: 38px;
+    margin-left: 22px;
+  }
+  .play::after{
+    top: 9px;
+    right: 2px;
+    border-width: 10px;
+  }
+  .right img {
+    width: 100%;
+  }
+
+
+  .clinic-equip {
+    height: 460px;
+  }
+  .title-clinic{
+    font-size: 1.8rem;
+  }
+  .skill-clinic ul li{
+    font-size: 0.75rem;
+    margin-bottom: 7px;
+  }
+  .clinic-equip img{
+    width: 65%;
+  }
+  .clinic-equip .doctors {
+    height: 45%;
+    width: 25%;
+    bottom: 27%;
+    right: 30%;
+}
+  .doctor img{
+    width: 32%;
+  }
+  .doctor-name{
+    font-size: 0.6rem;
+  }
+  .doctor-function{
+    font-size: 0.5rem;
+  }
+
+
+  .your-choose{
+    height: 355px;
+  }
+  .your-choose .doctor-img {
+    width: 65%;
+}
+  .list{
+    margin-top: 0;
+  }
+  .list-choose{
+    width: 100%;
+  }
+  .title-why{
+    font-size: 1rem;
+  }
+  .description-why{
+    font-size: 0.8rem;
+  }
+  .number-why{
+    font-size: 4rem;
+  }
+
+
+  .lab-support .left > div{
+    width: 90%;
+  }
+  .lab-support{
+    height: 360px;
+  }
+  .test{
+    height: 85px;
+    width: 320px;
+  }
+  .title-test{
+    font-size: 1rem;
+  }
+  .description-test{
+    font-size: .8rem;
+    margin-top: 4px;
+  }
+
+
+  .your-choose,
+  .services-type,
+  .perfis,
+  .client-depor{
+    height: 320px;
+  }
+
+
+  .container-services{
+    margin-top: 35px;
+  }
+  .service{
+    width: 90px;
+    height: 90px;
+  }
+  .icon-service{
+    width: 35px;
+  }
+  .title-service{
+    font-size: 0.7rem;
+    margin-top: 3px;
+  }
+  
+
+  .perfil-image{
+    width: 90%;
+  }
+  .skills-one,
+  .skills-two{
+    width: 40%;
+    font-size: 0.6rem;
+  }
+  .skills-one img,
+  .skills-two img{
+    width: 27%;
+  }
+  .skills-one{
+    font-size: 0.7rem;
+    left: -24px;
+  }
+  .skills-two{
+    right: -7%;
+  }
+
+
+  .main-text{
+    height: 110px;
+    width: 470px;
+    border-radius: 0 20px 20px 20px;
+    top: 200px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .message-text{
+    height: 350px;
+    margin-top: 65px;
+  }
+
+    
+  .aspas {
+    top: -162px;
+    left: -29px;
+  }
+  .client-depor button{
+    margin-top: -60px;
+  }
+  .client-pict{
+    width: 193px;
+    clip-path: circle(18px at 25px 24px);
+  }
+  .client-name{
+    font-size: 1rem;  
+  }
+  .coment-client{
+    line-height: 1rem;
+    font-size: 0.8rem;
+  }
+
+
+  .subscribe{
+    height: 240px;
+  }
+  .subs-now{
+    height: 160px;
+    border-radius: 20px;
+  }
+  .email-subs input{
+    height: 40px;
+    width: 264px;
+    border-radius: 0 12px 12px 12px;
+    padding: 0 11px;
+  }
+
+
+  .menu-footer > div{
+    padding: 0;
+  }
+  .about-footer{
+    flex: 2;
+  }
+  .credits-footer{
+    height: 40px;
+    line-height: 2.5rem;
+  }
+  
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+}
+@media (max-width: 425px) {
+
+
+/*MENU - HUMBURGUER*/
+
+
+  .menu.active nav{
+    width: 50vw;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--color-blue);
+    top: 0;
+    right: 0;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .menu ul{
+    margin-top: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .menu ul li{
+    font-size: 1rem;
+    padding: 20px 0;
+  }
+  nav a{
+    color: var(--color-bg);
+  }
+  .menu a:hover{
+    color: var(--color-font);
+    transition: all 0.3s linear;
+  }
+  .book{
+    margin-left: -4px;
+  }
+  .book button{
+    font-size: 1rem;
+    background: inherit;
+    text-align: left;
+    /* margin-top: 10px; */
+  }
+
+
+  .btn-menu{
+    display: block;
+    width: 45px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  .menu-interation {
+    display: block;
+    width: 40px;
+    border-top: 3px solid;
+    border-radius: 2px;
+    border-color: var(--color-font);
+  }
+  .menu-interation::after, 
+  .menu-interation::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: var(--color-font);
+    margin-top: 10px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .menu.active .menu-interation::before {
+    transform: rotate(135deg);
+    background-color: var(--color-bg);
+  }
+  .menu.active .menu-interation::after {
+    transform: rotate(-135deg);
+    background-color: var(--color-bg);
+    top: -13px;
+  }
+  .menu.active .menu-interation {
+    border-top-color: transparent;
+  }
+
+  
+
+
+  .container.top{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    width: 36px;
+  }
+  .scren-main{
+    height: calc(100vh - 70px);
+  }
+  .container{
+    align-items: initial;
+    flex-direction: column;
+  }
+  .left,
+  .right{
+    justify-content: center;
+    align-items: center;
+  }
+  .left > div{
+    text-align: center;
+    width: 100%;
+  }
+  .get-play{
+    justify-content: center;
+  }
+  .scren-main .right img{
+    width: 80%;
+  }
+
+
+  
+  .clinic-equip{
+    margin-top: 40px;
+    height: 680px;
+  }
+  .clinic-equip .skill-clinic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .clinic-equip .skill-clinic ul{
+    text-align: left;
+    width: 80%;
+  }
+  .clinic-equip .right{
+    justify-content: flex-end;
+  }
+  .clinic-equip .doctors .doctor img{
+    width: 32%;
+  }
+  .doctors img{
+    width: 55%;
+  }
+  .clinic-equip img{
+    width: 55%;
+  }
+  .clinic-equip .doctors {
+    height: 30%;
+    width: 45%;
+    bottom: 10%;
+    right: 51%;
+  }
+
+
+  .your-choose{
+    height: 720px;
+  }
+  .your-choose .left{
+    margin-top: 40px;
+    position: relative;
+  }
+  .base-img{
+    display: block;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .list{
+    margin-top: 15px;
+  }
+  .title-clinic{
+    text-align: center;
+  }
+  .number-why{
+    font-size: 3rem;
+    margin-right: 32px;
+  }
+
+
+  .lab-support{
+    height: 650px;    
+  }
+
+
+  .services-type{
+    height: 460px;
+  }
+  .container-services{
+    flex-wrap: wrap;
+  }
+  .service:first-child{
+    border-radius: 20px 0 0 0;
+  }
+  .service:last-child{
+    border-radius: 0 0 20px 0;
+  }
+  .service:nth-child(3) {
+    border-radius: 0 20px 0 0;
+  }
+  .service:nth-child(4) {
+    border-radius: 0 0 0 20px;
+  }
+
+
+  .perfis{
+    height: 560px;
+  }
+  .perfil-doctor{
+    margin-top: 60px;
+  }
+  .perfil-image{
+    width: 60%;
+  }
+  .skills-one,
+  .skills-two{
+    width: 35%;
+    height: 40%;
+  }
+  .skills-one{
+    left: -2%;
+  }
+  .skills-two{
+    right: -1%;
+  }
+
+
+  .message .message-text{
+    justify-content: center;
+    align-items: center;
+    margin-top: -33px;
+  }
+  .equipe-medic{
+    width: 90%;
+  }
+  .main-text{
+    width: 100%;
+  }
+
+
+  .client-depor{
+    height: 455px;
+  }
+  .client-depor .left{
+    margin-top: 40px;
+  }
+  .client-pict{
+    clip-path: circle(20px at 29px 24px);
+  }
+  .client-depor .left .aspas{
+    width: 52px;
+    top: -160px;
+    left: -150px;
+  }
+  .description{
+    margin-bottom: 20px;
+  }
+  .box-client{
+    padding: 15px;
+    height: 75%;
+    margin-top: 40px;
+  }
+
+
+  .subscribe{
+    height: 220px;
+  }
+  .subs-now .right{
+    margin-bottom: 15px;
+  }
+  .subs-now{
+    height: 150px;
+  }
+  .tile-subs{
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .email-subs input{
+    margin-bottom: 10px;
+  }
+
+
+
+  footer{
+    height: 770px;
+    background-position: center;
+  }
+  .menu-footer{
+    flex-direction: column;
+  }
+  .link-all{
+    margin-top: 10px;
+  }
+  .about-footer .description{
+    width: 100%;
+  }
+  .credits-footer{
+    height: 60px;
+  }
+}
+
+
+
+
+@media (max-width: 375px) {
+
+  .clinic-equip .doctors{
+    bottom: 8%;
+  }
+  .doctor{
+    margin-bottom: 5px;
+  }
+
+
+  .client-depor{
+    height: 470px;
+  }
+  .client-pict{
+    clip-path: circle(20px at 25px 24px);
+  }
+}
+
+
+
+
+@media (max-width: 320px) {
+
+  .logo{
+    width: 35px;
+  }
+  .title-one,
+  .title-two{
+    font-size: 2rem;
+  }
+  .scren-main .right img{
+    width: 90%;
+  }
+  .clinic-equip .skill-clinic ul{
+    width: 100%;
+  }
+  .clinic-equip .left > div{
+    width: 90%;
+  }
+  .description{
+    margin-bottom: 12px;
+  }
+
+  .clinic-equip img{
+    width: 60%;
+  }
+  .clinic-equip .doctors{
+    width: 47%;
+    bottom: 6%;
+    right: 53%;
+  }
+
+  .your-choose .left{
+    margin-top: 0;
+  }
+  .base-img{
+    bottom: 40px;
+  }
+
+
+  .lab-support{
+    height: 570px;
+  }
+  .lab-support .left{
+    margin-top: 30px;
+  }
+  .test{
+    height: 88px;
+    width: 280px;
+  }
+
+
+  .services-type{
+    height: 520px;
+  }
+  .description-test{
+    margin-top: 10px;
+  }
+  .service:first-child{
+    border-radius: 20px 0 0 0;
+  }
+  .service:last-child{
+    border-radius: 0 0 20px 0;
+  }
+  .service:nth-child(3) {
+    border-radius: 0 0 0 0;
+  }
+  .service:nth-child(4) {
+    border-radius: 0 0 0 0;
+  }
+  .service:nth-child(2) {
+    border-radius: 0 20px 0 0;
+  }
+  .service:nth-child(5) {
+    border-radius: 0 0 0 20px;
+  }
+
+
+  .perfis{
+    height: 522px;
+  }
+  .perfil-doctor{
+    margin-top: 45px;
+  }
+  .skills-one,
+  .skills-two{
+    border-radius: 15px;
+    height: 60%;
+  }
+  .skills-two{
+    right: -3%;
+  }
+
+
+  .message .message-text{
+    margin-top: -55px;
+    height: 320px;
+  }
+  .main-text{
+    padding: 12px;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+
+  .client-depor{
+    height: 535px;
+  }
+  .client-depor .left .aspas{
+    top: -201px;
+    left: -108px;
+  }
+  .client-depor button{
+    margin-top: -55px;
+  }
+  .client-pict{
+    clip-path: circle(16px at 22px 20px);
+  }
+
+
+  .email-subs input{
+    width: 227px;
+  }
+  .tile-subs{
+    font-size: 0.8rem;
+  }
+}
