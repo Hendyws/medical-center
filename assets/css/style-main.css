@@ -1450,7 +1450,7 @@ margin-bottom: 10px;
 
 
   .lab-support{
-    height: 570px;
+    height: 670px;
   }
   .lab-support .left{
     margin-top: 30px;
@@ -1534,5 +1534,10 @@ margin-bottom: 10px;
   }
   .tile-subs{
     font-size: 0.8rem;
+  }
+
+  .links,
+  .faq{
+    width: 50%;
   }
 }
